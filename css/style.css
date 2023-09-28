@@ -1,6 +1,12 @@
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 header {
+    
     height: 56.25vw;
-/*     background-color: #ffa200; */
+    background-color: #ffa200;
 }
 
 .header-img {
@@ -17,7 +23,64 @@ header {
 
     font-size: 10rem;
     font-family: 'Times New Roman';
-    
+
 
     color: white;
+}
+
+.header-nav {
+    top: 3.5vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 7.5vw;
+}
+
+.header-nav img {
+    max-width: 25%;
+    max-height: max(25px, 5vw);
+}
+.header-nav-text{
+    min-width: 50%;
+}
+
+.logo {
+    height: auto;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.wrapper {
+    background-color: #ffff;
+    min-height: 56.25vw;
+}
+
+.first-text {
+    width: 50%;
+}
+
+.first-img {
+    width: min(550px, 50vw);
+    height: min(450px, 50vw);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .first-img,
+    .first-text {
+        width: 100%;
+
+    }
+
+    .first-img {
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .first-img div {
+        width: 100%;
+    }
 }
