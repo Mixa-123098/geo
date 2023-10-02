@@ -61,10 +61,19 @@ header {
 .first-text {
     width: 50%;
 }
+.second-text {
+    width: 50%;
+    margin-top: 40px;
+}
 
 .first-img {
     width: min(550px, 50vw);
     height: min(450px, 50vw);
+}
+.second-img {
+    width: min(550px, 50vw);
+    height: min(450px, 50vw);
+    margin-top: 60px;
 }
 
 @media screen and (max-width: 1200px) {
