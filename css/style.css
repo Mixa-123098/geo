@@ -1,6 +1,4 @@
-:root{
-    --volcanosHeadingWidth:50%;
-}
+
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -81,10 +79,10 @@ header {
 /* volcanos */
 .volcanos-heading{
     /* width: var(--volcanosHeadingWidth); */
-    max-width: var(--volcanosHeadingWidth);
+    max-width: 50%;
 }
 .first-volcano{
-    width: calc(95% - var(--volcanosHeadingWidth));
+    width: calc(95% - 50%);
 }
 .volcanos{
     width: 18vw;
