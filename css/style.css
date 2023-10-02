@@ -1,3 +1,6 @@
+:root{
+    --volcanosHeadingWidth:50%;
+}
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -74,6 +77,26 @@ header {
     width: min(550px, 50vw);
     height: min(450px, 50vw);
     margin-top: 60px;
+}
+/* volcanos */
+.volcanos-heading{
+    /* width: var(--volcanosHeadingWidth); */
+    max-width: var(--volcanosHeadingWidth);
+}
+.first-volcano{
+    width: calc(95% - var(--volcanosHeadingWidth));
+}
+.volcanos{
+    width: 18vw;
+    height: 20vw;
+}
+.card-style{
+    background-color: lightgray;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 @media screen and (max-width: 1200px) {
