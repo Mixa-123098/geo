@@ -66,6 +66,10 @@ header {
     margin-top: 40px;
 }
 
+.third-text{
+    padding: 100px;
+}
+
 .first-img {
     width: min(550px, 50vw);
     height: min(450px, 50vw);
@@ -78,6 +82,8 @@ header {
 .img-imit {
     width: min(550px, 50vw);
     height: min(450px, 50vw);
+    margin-top: 70px;
+    float: right;
 }
 /* volcanos */
 .volcanos-heading{
