@@ -75,6 +75,11 @@ header {
     height: min(450px, 50vw);
     margin-top: 60px;
 }
+.img-imit {
+    width: min(550px, 50vw);
+    height: min(450px, 50vw);
+    margin-top: 60px;
+}
 /* volcanos */
 .volcanos-heading{
     /* width: var(--volcanosHeadingWidth); */
