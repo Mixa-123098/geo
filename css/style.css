@@ -397,14 +397,14 @@ header {
 
 
 .cont_central {
-    position: relative;
+    position: absolute;
     width: 100%;
     top: 10%;
     margin-top: 200px;
 }
 
 .cont_modal {
-    position: relative;
+    position: absolute;
     width: 300px;
     height: 400px;
     -webkit-transition: all 0.5s;
