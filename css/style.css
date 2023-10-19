@@ -62,7 +62,7 @@ body {
     position: relative;
     border: none !important;
     box-shadow: 20px 20px 60px #bebebe,
-    /* -20px -20px 60px #ffffff; */
+        /* -20px -20px 60px #ffffff; */
 }
 
 .card:before {
@@ -118,6 +118,34 @@ body {
     line-height: 1.4;
     word-spacing: 100vw;
 }
+
+.card__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: var(--spacing-l);
+    transform: translateY(100%);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: transform 0.3s, opacity 0.3s, max-height 0.3s;
+}
+
+.card:hover .card__info {
+    transform: translateY(0);
+    opacity: 1;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.card__description {
+    max-height: none;
+    overflow: visible;
+}
+
 
 nav a {
     text-decoration: none;
@@ -193,6 +221,8 @@ header {
 
 .third-text {
     padding: 100px;
+    position: relative;
+   width: 100vw !important;
 }
 
 .first-img {
@@ -208,8 +238,8 @@ header {
 
 .img-imit {
     border-radius: 10px;
-    
-     
+
+
 }
 
 .img-imit:hover .image {
@@ -250,10 +280,10 @@ header {
     background-size: cover;
  */
 
- border-radius: 50px;
- background: linear-gradient(145deg, #9d958e, #847d78);
- box-shadow:  20px 20px 60px #7d7671,
-              -20px -20px 60px #a9a099;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #9d958e, #847d78);
+    box-shadow: 20px 20px 60px #7d7671,
+        -20px -20px 60px #a9a099;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -344,6 +374,12 @@ header {
     height: auto;
 }
 
+.footer-logo {
+    max-width: 50px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
 .volcanos-text2 {
     position: absolute;
     top: 0;
@@ -372,41 +408,153 @@ header {
     -o-border-radius: 200px;
 }
 
+.footer-bs {
+    background-color: #3c3d41;
+    padding: 60px 40px;
+    color: rgba(255, 255, 255, 1.00);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 6px;
+}
+
+.footer-bs .footer-brand,
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+    padding: 10px 25px;
+}
+
+.footer-bs .footer-nav,
+.footer-bs .footer-social,
+.footer-bs .footer-ns {
+    border-color: transparent;
+}
+
+.footer-bs .footer-brand h2 {
+    margin: 0px 0px 10px;
+}
+
+.footer-bs .footer-brand p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.footer-bs .footer-nav ul.pages {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.pages li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.pages a {
+    color: rgba(255, 255, 255, 1.00);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-bs .footer-nav ul.pages a:hover {
+    color: rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+}
+
+.footer-bs .footer-nav h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-nav ul.list {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-nav ul.list li {
+    padding: 5px 0px;
+}
+
+.footer-bs .footer-nav ul.list a {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.footer-bs .footer-nav ul.list a:hover {
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+}
+
+.footer-bs .footer-social ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-bs .footer-social h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li {
+    padding: 5px 4px;
+}
+
+.footer-bs .footer-social a {
+    color: rgba(255, 255, 255, 1.00);
+}
+
+.footer-bs .footer-social a:hover {
+    color: rgba(255, 255, 255, 0.80);
+    text-decoration: none;
+}
+
+.footer-bs .footer-ns h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-bs .footer-ns p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+@media (min-width: 768px) {
+
+    .footer-bs .footer-nav,
+    .footer-bs .footer-social,
+    .footer-bs .footer-ns {
+        border-left: solid 1px rgba(255, 255, 255, 0.10);
+    }
+}
 
 /* -------- ----------- */
 .cont_principal {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfaf6+9,d4cebf+74,d4cebf+74,d4cebf+100 */
-  
-    /* Old browsers */
-    /* background: -moz-linear-gradient(-45deg, rgba(251, 250, 246, 1) 9%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 100%); */
-    /* FF3.6-15 */
-    /* background: -webkit-linear-gradient(-45deg, rgba(251, 250, 246, 1) 9%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 100%); */
-    /* Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(135deg, rgba(251, 250, 246, 1) 9%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 74%, rgba(212, 206, 191, 1) 100%); */
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfaf6', endColorstr='#d4cebf', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-
-
+    /*width: 100%;
+    */
+    /*padding:  auto;
+    */
+    position: relative;
+    /*display: flex;
+    justify-content: start;
+    */
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    margin-top: 100px;
 }
 
 
 .cont_central {
-    position: absolute;
-    width: 100%;
-    top: 10%;
-    margin-top: 200px;
+
+    /* margin-top: 200px; */
 }
 
 .cont_modal {
     position: relative;
-    width: 300px;
-    height: 400px;
+    /* width: 300px;
+    height: 400px; */
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -424,7 +572,7 @@ header {
     background-color: #eee;
     border-radius: 5px;
     top: -20px;
-    float: left;
+    /* float: left; */
     z-index: 2;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -455,7 +603,7 @@ header {
 }
 
 .cont_text_ingredients {
-    
+
     position: absolute;
     width: 0px;
     top: 0px;
@@ -467,17 +615,8 @@ header {
     z-index: 3;
     box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.2);
 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbf9f9+28,e8eaed+100 */
-    background: rgb(48, 21, 21);
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(251, 249, 249, 1) 28%, rgba(232, 234, 237, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(251, 249, 249, 1) 28%, rgba(232, 234, 237, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(251, 249, 249, 1) 28%, rgba(232, 234, 237, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbf9f9', endColorstr='#e8eaed', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+    background: rgb(255, 255, 255);
+
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -489,7 +628,7 @@ header {
 
 .cont_icon_right {
     position: relative;
-    float: right;
+    /* float: right; */
     margin-top: 16px;
 }
 
@@ -542,7 +681,7 @@ header {
 
 .cont_tabs {
     position: relative;
-    float: left;
+    /* float: left; */
     width: 410px;
     height: 60px;
     border-bottom: 3px solid #EDEDEC;
@@ -555,7 +694,7 @@ header {
 
 .cont_tabs>ul>li {
     position: relative;
-    float: left;
+    /* float: left; */
     width: 50%;
     list-style: none;
 }
@@ -577,12 +716,10 @@ header {
     border-radius: 50%;
     color: #fff;
     box-shadow: 0px 0px 20px -2px rgba(237, 36, 96, 1);
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    transition: all 0.5s;
+
+    transition: all 0.25s;
     transform: rotate(180deg);
-    position: st;
+
 
 }
 
@@ -702,20 +839,21 @@ header {
         width: 100%;
     }
 }
-h4
-{
+
+h4 {
     text-align: center;
 }
-hr
-{
-background-color: #2d3548;
-height: 2px;
+
+hr {
+    background-color: #2d3548;
+    height: 2px;
 }
-a{
+
+a {
     text-decoration: none;
-    text-align: center; 
+    text-align: center;
 }
-mark
-{
-background-color: #ed24602e;
+
+mark {
+    background-color: #ed24602e;
 }
